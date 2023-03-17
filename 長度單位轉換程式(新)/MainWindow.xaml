@@ -1,0 +1,26 @@
+﻿<Window x:Class="長度單位轉換程式_新_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:長度單位轉換程式_新_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnAllClear" Content="清除" HorizontalAlignment="Left" Margin="27,32,0,0" VerticalAlignment="Top" Height="30" Width="65" Click="btnAllClear_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,97,0,0" TextWrapping="Wrap" Text="公分" VerticalAlignment="Top" Width="33" FontSize="14"/>
+        <TextBox x:Name="txtCM" HorizontalAlignment="Left" Margin="27,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" KeyUp="txtCM_KeyUp"/>
+        <TextBlock HorizontalAlignment="Left" Margin="290,97,0,0" TextWrapping="Wrap" Text="公尺" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtM" HorizontalAlignment="Left" Margin="290,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" KeyUp="txtM_KeyUp"/>
+        <TextBlock HorizontalAlignment="Left" Margin="548,97,0,0" TextWrapping="Wrap" Text="公里" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtKM" HorizontalAlignment="Left" Margin="548,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" KeyUp="txtKM_KeyUp"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,200,0,0" TextWrapping="Wrap" Text="英吋" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtIn" HorizontalAlignment="Left" Margin="27,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" KeyUp="txtIn_KeyUp"/>
+        <TextBlock HorizontalAlignment="Left" Margin="290,200,0,0" TextWrapping="Wrap" Text="英呎" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtFt" HorizontalAlignment="Left" Margin="290,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" KeyUp="txtFt_KeyUp"/>
+        <TextBlock HorizontalAlignment="Left" Margin="548,200,0,0" TextWrapping="Wrap" Text="英碼" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtYard" HorizontalAlignment="Left" Margin="548,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14" RenderTransformOrigin="0.503,0.231" KeyUp="txtYard_KeyUp"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,292,0,0" TextWrapping="Wrap" Text="說明文字" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtInfo" HorizontalAlignment="Left" Margin="27,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" Height="23"/>
+    </Grid>
+</Window>
