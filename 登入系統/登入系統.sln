@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "登入系統", "登入系統.csproj", "{E903BEC6-A804-45AB-B47A-66E17937A56E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E903BEC6-A804-45AB-B47A-66E17937A56E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E903BEC6-A804-45AB-B47A-66E17937A56E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E903BEC6-A804-45AB-B47A-66E17937A56E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E903BEC6-A804-45AB-B47A-66E17937A56E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B15F53D-FFD0-4D88-82C5-5945DD3922D7}
+	EndGlobalSection
+EndGlobal
