@@ -149,5 +149,22 @@ namespace Calculator
             //重新設定計算機物件
             calculate.Reset();
         }
+
+        private void btnBackspace_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtNumber.Text.Length > 0)
+            {
+                txtNumber.Text = txtNumber.Text.Remove(txtNumber.Text.Length - 1, 1);
+                if (txtNumber.Text.Length == 0)
+                    txtNumber.Text = "0";
+            }
+        }
+
+        private void btnPercentage_Click(object sender, RoutedEventArgs e)
+        {
+            float number = Convert.ToSingle(txtNumber.Text);
+            float result = number / 100.0f;
+            txtNumber.Text = result.ToString();
+        }
     }
 }
