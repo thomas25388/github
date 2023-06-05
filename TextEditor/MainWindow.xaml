@@ -8,13 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="Cyan">
         <Button x:Name="btnOpen" Content="開啟檔案" HorizontalAlignment="Left" Margin="18,20,0,0" VerticalAlignment="Top" FontSize="22" Click="btnOpen_Click"/>
-        <Button x:Name="btnSave" Content="存檔" HorizontalAlignment="Left" Margin="120,21,0,0" VerticalAlignment="Top" FontSize="24" Height="31" Width="74"/>
-        <ComboBox x:Name="cmbFontFamily" HorizontalAlignment="Left" Margin="209,21,0,0" VerticalAlignment="Top" Width="120" Height="31" FontSize="18"/>
-        <ComboBox x:Name="cmbFontSize" HorizontalAlignment="Left" Margin="342,21,0,0" VerticalAlignment="Top" Width="120" FontSize="18" Height="31"/>
-        <Button x:Name="btnBold" Content="B" HorizontalAlignment="Left" Margin="475,21,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Height="31" Width="29" RenderTransformOrigin="0.066,0.737"/>
-        <Button x:Name="btnItalic" Content="I" HorizontalAlignment="Left" Margin="509,10,0,0" VerticalAlignment="Top" FontSize="24" Width="32" Height="42" FontStyle="Italic"/>
-        <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Margin="548,21,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Height="31" Width="34"/>
-        <RichTextBox x:Name="rtbText" Margin="10,57,10,10" FontSize="24">
+        <Button x:Name="btnSave" Content="存檔" HorizontalAlignment="Left" Margin="120,21,0,0" VerticalAlignment="Top" FontSize="24" Height="31" Width="74" Click="btnSave_Click"/>
+        <ComboBox x:Name="cmbFontFamily" HorizontalAlignment="Left" Margin="209,21,0,0" VerticalAlignment="Top" Width="120" Height="31" FontSize="18" SelectionChanged="cmbFontFamily_SelectionChanged"/>
+        <ComboBox x:Name="cmbFontSize" HorizontalAlignment="Left" Margin="342,21,0,0" VerticalAlignment="Top" Width="120" FontSize="18" Height="31" SelectionChanged="cmbFontSize_SelectionChanged"/>
+        <Button x:Name="btnBold" Content="B" HorizontalAlignment="Left" Margin="475,21,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Height="31" Width="29" RenderTransformOrigin="0.066,0.737" Click="btnBold_Click"/>
+        <Button x:Name="btnItalic" Content="I" HorizontalAlignment="Left" Margin="509,10,0,0" VerticalAlignment="Top" FontSize="24" Width="32" Height="42" FontStyle="Italic" Click="btnItalic_Click"/>
+        <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Margin="548,21,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Height="31" Width="34" Click="btnUnderline_Click"/>
+        <RichTextBox x:Name="rtbText" Margin="10,57,10,10" FontSize="24" SelectionChanged="rtbText_SelectionChanged" LostFocus="rtbText_LostFocus">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="RichTextBox"/>
