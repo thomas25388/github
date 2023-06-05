@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="rtbText" Background="#FF00EDFF">
-        <Button x:Name="btnOpen" Content="開啟檔案" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <Button x:Name="btnSave" Content="存檔" HorizontalAlignment="Left" Margin="135,30,0,0" VerticalAlignment="Top" FontSize="24" Width="88"/>
+        <Button x:Name="btnOpen" Content="開啟檔案" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" FontSize="24" Click="btnOpen_Click"/>
+        <Button x:Name="btnSave" Content="存檔" HorizontalAlignment="Left" Margin="135,30,0,0" VerticalAlignment="Top" FontSize="24" Width="88" Click="btnSave_Click"/>
         <RichTextBox Margin="10,69,10,10">
             <FlowDocument>
                 <Paragraph>

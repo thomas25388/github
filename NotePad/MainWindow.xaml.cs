@@ -25,5 +25,31 @@ namespace NotePad
         {
             InitializeComponent();
         }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            // 開啟一個存檔對話框
+            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
+            // 設定檔案過濾，可以選擇只顯示純文字檔（*.txt）
+            dlg.Filter = "純文字資料 (*.txt)|*.txt|All files (*.*)|*.*";
+
+            // ShowDialog() 來顯示對話框，如果點選存檔按鍵，會等於 true
+            if (dlg.ShowDialog() == true)
+            {
+                // 放入你要處理的事情
+            }
+        }
+
+        private void btnOpen_Click(object sender, RoutedEventArgs e)
+        {
+            // 開啟一個開啟檔案對話框
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+            dlg.Filter = "純文字資料 (*.txt)|*.txt|All files (*.*)|*.*";
+
+            // ShowDialog() 來顯示對話框，如果點選開啟按鍵，會等於 true
+            if (dlg.ShowDialog() == true)
+            {
+                // 放入你要處理的事情
+            }
+        }
     }
-}
