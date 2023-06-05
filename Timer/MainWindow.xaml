@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Timer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="簡易時鐘" Height="450" Width="800" Icon="/clock.png" ResizeMode="NoResize">
     <Grid>
         <TextBox x:Name="txtTime" HorizontalAlignment="Center" Margin="0,26,0,0" TextWrapping="Wrap" Text="TextBox" Width="636" FontSize="72" FontWeight="Bold" Height="87" VerticalAlignment="Top" />
         <TextBox x:Name="txtDate" HorizontalAlignment="Left" Margin="83,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="312" FontSize="48" FontWeight="Bold" Height="67"/>
@@ -14,7 +14,7 @@
         <Button x:Name="btnCancelAlert" Content="取消鬧鐘" HorizontalAlignment="Left" Margin="202,235,0,0" VerticalAlignment="Top" FontSize="24"/>
         <ComboBox x:Name="cmbHour" HorizontalAlignment="Left" Margin="323,238,0,0" VerticalAlignment="Top" Width="77" FontSize="18"/>
         <ComboBox x:Name="cmbMin" HorizontalAlignment="Left" Margin="415,238,0,0" VerticalAlignment="Top" Width="77" FontSize="18" Height="29"/>
-        <MediaElement x:Name="meSound" HorizontalAlignment="Left" Height="134" Margin="559,235,0,0" VerticalAlignment="Top" Width="136"/>
+        <MediaElement x:Name="meSound" HorizontalAlignment="Left" Height="134" Margin="559,235,0,0" VerticalAlignment="Top" Width="136" Volume="1" Source="/alert.wav"/>
 
     </Grid>
 </Window>
